@@ -1,0 +1,135 @@
+            
+body {
+    margin:0;
+    padding:0;
+    min-height: 100%;
+    position: relative;
+    /* color: #000000; */
+    text-rendering: optimizeLegibility;
+    font-family: "oxygen", sans-serif; 
+    font-size: 23px; 
+    color: #000;
+}
+a {text-decoration: none;}
+    
+.main1 {background-color: #F6ABCA;}
+    /* Это очень важный .main1. Без него сайт полетит. */
+.main2 {background-color: #F6ABCA;
+    width:100%; 
+    margin: 0 auto; 
+    text-align: center;}
+    @media (max-width:375px) {
+/* body {font-size: 16px;} */
+.img1 {background-color: aliceblue;
+    min-height: 50px;}
+.td0 {width: 50px;}
+}
+/* @media (max-width: 767px) {
+    .img1 {min-height: 50px;}
+    .td0 {width: 50px;}
+} */
+@media (min-width: 768px) {
+    .img1 {min-height: 50px;}
+    .td0 {width: 50px;}
+    }
+/* @media (min-width: 992px) {
+    .img1 {min-height: 50px;}
+    .td0 {width: 50px;}
+} */
+@media (min-width: 1200px) {
+    .img1 {min-height: 50px;}
+    .main2 {max-width: 1024px;}}
+
+        
+ .table0_1 {background-color: #F6ABCA; 
+    width: 100%; margin: 0 auto; position: fixed;}
+.table0_2 {width: 375px; margin: 0 auto; width: 100%; max-width: 1024px;}
+.table0_3 {min-height: 50px}
+.table2, .table3, .table4 {
+    min-width: 375px; 
+    min-height: 50px;
+    border: 0;
+    width: 100%;
+    margin: 0 auto; }
+.td1 {width: 10px;}
+.td5 {width: 50px}
+.rectangle0, .rectangle1, .rectangle2, .rectangle3, .rectangle4,rectangle5 {
+    text-align: center; width: 100%; margin: 0 auto;
+}
+.rectangle1_2 {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-color: #FD889F;
+    min-width: 375px;
+    height: 450px;
+    padding-top: 50px;}
+.rectangle2 {background-color: #95EE6B;
+    min-width: 375px;
+    height: 450px;
+        
+        /* overflow-x: scroll;
+        overflow-x: hidden; */
+    }
+.rectangle3 {background-color: #FD889F;
+    min-width: 375px;
+    height: 450px;
+        
+        /* overflow-x: scroll;
+        overflow-x: hidden; */
+    }
+.rectangle4 {background-color: #95EE6B;
+    min-width: 375px;
+    height: 450px;}
+.rectangle5 {background-color: #FD889F;
+    min-width: 375px;
+    height: 450px;}
+/* footer {background-color: blueviolet;
+        min-width: 375px;
+        min-height: 50px;} */
+    
+/* .img0 {width: auto;
+    max-height: 50px;}
+.img1 {margin: 0 auto;
+        max-width: 800px;} */
+/* .img1 {min-height: 50px;} */
+.img2 {width: 210px;
+    height: 214px;}
+
+        h1 {font-family:"Oxygen", sans-serif; font-size: 46px;}
+h2 {font-family:"Oxygen", sans-serif; font-size: 46px;}
+h3 {font-family:"Oxygen", sans-serif; 
+    font-size: 30px;}
+ 
+ #overlay {
+    position: fixed;
+    display: none;
+    min-width: 480px;
+    width: 70%;
+    max-width: 630px;
+    height: 100;
+    top: 62px;    /*Вопрос! где еще 12px ??
+                    почему надо писать 62px, хотя должно быть 50px?*/
+    left: 0;
+    bottom: 0;
+    background-color: rgba(149, 238, 107, 0.95);
+    z-index: 2;
+    cursor: pointer;
+ }
+#text{color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 46p
+            /* transform: translate(-60%,-60%);
+    -ms-transform: translate(-60%,-60%); */
+}
+.list_button {background-color: inherit;
+    margin: 0; 
+    padding: 0; 
+    border: 0; }
+.list_style {list-style: none;}
+.simple {
+    font-size: 30px;
+    font-weight: 400;
+    }

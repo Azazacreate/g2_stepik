@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+* {margin: 0;}
+.hero {
+    /* min-height: 250px; */
+    display: flex;       /* will be discovered soon */
+    align-items: center; /*will be discovered soon */
+    
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+    width: 1024px;
+    background-color: aqua;
+}
+
+.hero__content {
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.75rem 1.25rem;
+    color: white;
+    width: 60%;
+
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    left: calc(50% - 393.5px);
+}
+
+.hero__image {
+    max-width: 100%;
+}
+
+.hero__text {
+    font-size: 18px;
+}
+
+</style>
+</head>
+<body>
+    
+<div class="hero">
+    <img class="hero__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/View_of_Old_Trafford_from_East_Stand.jpg/1280px-View_of_Old_Trafford_from_East_Stand.jpg" alt="" />
+    <div class="hero__content">
+        <h2 class="hero__title">Here is the Title</h2>
+        <p class="hero__text">Here is example text to work with.</p>
+    </div>
+</div>
+
+</body>
+</html>

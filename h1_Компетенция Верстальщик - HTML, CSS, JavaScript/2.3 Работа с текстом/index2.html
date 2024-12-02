@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.3 Работа с текстом</title>
+    <link rel="stylesheet" href="style.css" />
+
+<style>
+* {margin: 0; border: 0; padding: 0;}
+html {font: 10px sans-serif;}
+body {font: 2.2rem sans-serif;}
+a {text-decoration: none;}
+
+
+.div1 {background-color: rgb(214, 83, 231); width: 100%;}
+.div2 {background-color: rgb(113, 202, 140); 
+    min-width: 360px; 
+    width: 100%;
+    max-width: 1024px; 
+    margin: 0 auto;}
+
+
+/* Overlay */
+#div3 {position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%-60px;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    
+    z-index: 2;
+    cursor: pointer;}
+.div4 {color: rgb(0, 0, 0);
+    background-color: rgba(149, 238, 107, 0.95);
+    width: 70%;
+    max-width: 615px;
+    height: 100%;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-inline-start: 2rem;
+}
+.list_button {background-color: rgb(63, 158, 34);
+    margin: 0; 
+    padding: 0; 
+    border: 0; }
+.list_style {list-style: none;}
+/* Overlay */
+
+
+.div5 {background-color: rgb(63, 158, 34);
+    min-width: 360px;
+    width: 100%;
+    max-width: 1024px;
+    padding: 5px 0 5px 0;
+    height: 50px;  
+    position: fixed;
+}
+    /* table, tbody, th, tr, td {height: 50px; margin: 0; border: 0; padding: 0; border-collapse:collapse; border-spacing:0cap;} */
+.div6 {width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.div6_1, .div6_2, .div6_3, .div6_4 {height: 50px;}
+    .div6_1 {width: 50px;}
+    .div6_2 {width: 198px;}
+    .div6_3 {width: 50px; float: right;}
+    .div6_4 {width: 50px; float: right; 
+        display: flex;
+        height: 50px;
+        /* text-align: center;
+        justify-content: center; */
+        align-items: center;
+    }
+
+.div7 {max-width: 1024px; 
+    padding-top: 60px;}
+
+.div71, .div72, .div73, .div74, .div8 {
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+}
+.div71 {background-color: aquamarine;
+    width: 100%-20px;
+    max-width: 1024px;
+    min-height: 500px;}
+.div72 {background-color: rgb(42, 209, 153);
+    width: 100%-20px;
+    min-height: 250px;}
+.div73 {background-color: aquamarine;
+    width: 100%-20px;
+    min-height: 250px;}
+.div74 {background-color: rgb(21, 216, 151);
+    width: 100%-20px;
+    min-height: 250px;}
+
+
+ul, ol {padding: 0 0 0 30px;}
+h1 {font: italic;}
+h2 {font: 3rem;}
+p {font-family: Georgia, 'Times New Roman', Times, sans-serif;}
+
+@media (max-width: 374px) {
+    .div6_2 {width: 186px; height: 47px;}
+    .div71, .div72, .div73, .div74, .div8 {
+        padding-inline-start: 1.5rem;
+        padding-inline-end: 1.5rem;
+    }
+}
+@media (min-width: 400px) {
+    .div6 {width:90%;}
+    .div6_1 {padding-right: 5px;}
+    .div6_4 {padding-right: 15px;}
+}
+
+
+</style>
+</head>
+<body>
+<div class="div1">
+<div class="div2">
+    <!-- div3 + div4 -->
+    <div class="div5">
+        <div id="div3" onclick="off()">
+            <div class="div4">
+                <br>
+                <ol>
+                    <a href="https://vk.com/feed"><li>First game</li></a>
+                    <br>
+                    <a href="https://youtube.com"><li>Second play</li></a>
+                    <br>
+                    <a href="https://gmail.com"><li>Third number</li></a>
+                    <br>
+                    <li>Achievements</li>
+                    <br>
+                    <li>Balance</li>
+                    <br>
+                    <li>Exit</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="div6">
+            <span class="div6_left"></span>
+            <button onclick="on()" class="list_button"><img src="https://cdn-icons-png.flaticon.com/512/5720/5720465.png" alt="1)Burger" class="div6_1" width="50px"></button>
+            <a href=""><img src="https://www.paripassu.com.br/hubfs/__logo-oficial-Oct-18-2022-10-41-48-88-AM.png" alt="2)Logotype" class="div6_2" width="186px"></a>
+            <a href=""><img src="https://icons.veryicon.com/png/o/business/settlement-platform-icon/to-grant-authorization.png" altk="3)Me" class="div6_3" width="50px"></a>
+            <a href=""><span class="div6_4">Login</span></a>
+            <!-- <a href=""><img src="4.3_login.png" altk="4)Login" class="div6_4"></a> -->
+        </div>
+    </div>
+
+    <div class="div7">
+        <div class="div71">
+                <br>
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/f7d0378f-b08a-4953-833c-52de42ee193a/280x420" alt="Alexandr_Petrov">
+                <p>
+                <br>
+                <h2>Александр Петров</h2>
+                <br>
+                О персоне
+                <br>
+                Карьера
+                Актер, Режиссер, Сценарист, Актер дубляжа, Продюсер
+                <br>
+                Рост
+                1.74 м
+                <br>
+                Дата рождения
+                25 января, 1989 • Водолей • 34 года
+                <br>
+                Место рождения
+                Переславль-Залесский, СССР
+                <br>
+                Жанры
+                Драма, комедия, приключения
+                <br>
+                Супруга
+                Виктория Петрова
+                <br>
+                Всего фильмов
+                90, 2010 — 2024
+                <br><br>
+                </p>
+        </div>
+        <div class="div72">
+            <p>
+                <br>
+                <h1>Алекса́ндр Андре́евич Петро́в</h1>
+                <br>
+                Алекса́ндр Андре́евич Петро́в (род. 25 января 1989, Переславль-Залесский, РСФСР, СССР) — российский актёр театра и кино. Двукратный лауреат премии «Золотой орёл»: за «Лучшую мужскую роль в кино» («Текст», 2020) и «Лучшую мужскую роль на телевидении» («Sпарта», 2019)[1].
+                </p>
+        </div>
+        <div class="div73">
+
+        </div>
+        <div class="div74"></div>
+
+        <div class="div8">
+            <p>Footer</p>
+        </div>
+    </div>
+
+    
+</div>
+</div>
+
+<script>
+    function on() {
+        document.getElementById("div3").style.display = "block";
+    }
+
+    function off() {
+        document.getElementById("div3").style.display = "none";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="some text here" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azaza</title>
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <link rel="icon" type="image/x-icon" href="img/favicon1_4.ico">
+
+
+<style>
+            
+* {box-sizing: border-box;}
+body {
+    width: 100%;
+    margin:0;
+    padding:0;
+    min-height: 100%;
+    position: relative;
+    color: #000000;
+    text-rendering: optimizeLegibility;
+    font-family: "oxygen", sans-serif; 
+    font-size: 16px; 
+}
+a {text-decoration: none;}
+table, tr, td, div, br, div, h1, h2, h3 {margin: 0; border: 0; padding: 0;}
+    
+.main1 {background-color: #F6ABCA;}
+    /* Это очень важный .main1. Без него сайт полетит. */
+.main2 {background-color: #FD889F;
+    width:100%; 
+    margin: 0 auto; 
+    text-align: center;}
+    
+.table0_1 {background-color: #F6ABCA; 
+    width: 100%; 
+    margin: 0 auto; 
+    position: fixed;
+    height: 60px;
+}
+.table0_2 {width: 360px; margin: 0 auto; width: 100%; max-width: 1024px;}
+.table0_3 {min-width: 0px; min-height: 48px;}
+.table2, .table3, .table4 {
+    width: 360px;
+    border: 0;
+    width: 100%;
+    margin: 0 auto;
+    }
+.table2, .table4 {height: 50px;}
+
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 60%;
+    max-width: 630px;
+    height: 100;
+    top: 60px;    /*Вопрос! где еще 12px ??
+                    почему надо писать 62px, хотя должно быть 50px?*/
+    left: 0;
+    bottom: 0;
+    background-color: rgba(149, 238, 107, 0.95);
+    z-index: 2;
+    cursor: pointer;
+ }
+#text{color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.list_button {background-color: inherit;
+    margin: 0; 
+    padding: 0; 
+    border: 0; }
+.list_style {list-style: none;}
+.simple {
+    font-size: 30px;
+    font-weight: 400;
+    }
+
+a {color: #000;}
+a:hover {
+    text-decoration: none;
+    color: #800000; /* Цвет ссылки при наведении на нее курсора мыши */  
+    /* text-decoration: underline; Добавляем подчеркивание */
+}
+/* я тут убрал ограничение: от 360px */
+body {font-size: 16px;}
+.img1 {
+    height: 50px;
+    padding: 5px;
+}
+.td0 {width: 0px;}
+.td1 {width: 0px;}
+.img2 {width: 105px;
+    height: 107px;}
+h1 {font-family: "Oxygen", sans-serif; font-size: 28px;}
+h2 {font-family: "Oxygen", sans-serif; font-size: 28px;}
+.main1 {background-color: #F6ABCA;}
+.rectangle0, .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5 {
+    text-align: center; width: 100%; margin: 0 auto;
+}
+.rectangle0 {min-width: 360px; 	
+    min-height: 75px;
+    background-color: #95EE6B;
+    margin: 0 auto;
+    text-align: center;}
+/* .rectangle1 {background-color: #FD889F;
+    min-width: 360px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;} */
+    /* .rectangle1 {background-color: #FD889F;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 360px;
+        height: 250px;
+    }
+.rectangle2 {background-color: #95EE6B;
+    min-width: 360px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;} */
+.rectangle1 {
+    background-color: #FD889F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 360px;
+    height: 250px;
+    margin: 0;
+    border-bottom: #FD889F;
+    border: 0px;
+    padding-top: 60px;
+}
+
+.rectangle2 {
+    background-color: #95EE6B;
+    min-width: 360px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.rectangle3 {background-color: #FD889F;
+    min-width: 360px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;}
+.rectangle4 {background-color: #95EE6B;
+    min-width: 360px;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rectangle5 {background-color: #FD889F;
+    min-width: 360px;
+    height: 250px;}
+
+
+@media (min-width: 767px) {
+body {
+    margin:0;
+    padding:0;
+    min-height: 100%;
+    position: relative;
+    /* color: #000000; */
+    text-rendering: optimizeLegibility;
+    font-family: "oxygen", sans-serif; 
+    font-size: 24px; 
+    color: #000;
+}
+.main1 {background-color: #F6ABCA;}
+    /* Это очень важный .main1. Без него сайт полетит. */
+.main2 {background-color: #FD889F;
+    width:100%; 
+    margin: 0 auto; 
+    text-align: center;}
+.td0 {width: 50px;}
+/* .table0_1 {background-color: #F6ABCA; 
+    width: 100%; 
+    margin: 0 auto; 
+    position: fixed;} */
+.table0_2 {width: 360px; margin: 0 auto; width: 100%; max-width: 1024px;}
+.table0_3 {min-height: 50px}
+.table2, .table3, .table4 {
+    min-width: 360px; 
+    min-height: 50px;
+    border: 0;
+    width: 100%;
+    margin: 0 auto; 
+}
+.td1 {width: 10px;}
+.td5 {width: 50px}
+.rectangle0, .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5 {
+    text-align: center; width: 100%; margin: 0 auto;
+}
+.rectangle1 {background-color: #FD889F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    min-width: 360px;
+    height: 450px;
+    padding-top: 60px;
+}
+.rectangle2 {background-color: #95EE6B;
+    min-width: 360px;
+    height: 450px;
+        
+        /* overflow-x: scroll;
+        overflow-x: hidden; */
+    }
+.rectangle3 {background-color: #FD889F;
+    min-width: 360px;
+    height: 450px;
+        
+        /* overflow-x: scroll;
+        overflow-x: hidden; */
+    }
+.rectangle4 {background-color: #95EE6B;
+    min-width: 360px;
+    height: 450px;}
+.rectangle5 {background-color: #FD889F;
+    min-width: 360px;
+    height: 450px;}
+.img2 {width: 210px;
+    height: 214px;}
+
+h1 {font-family:"Oxygen", sans-serif; font-size: 46px;}
+h2 {font-family:"Oxygen", sans-serif; font-size: 46px;}
+h3 {font-family:"Oxygen", sans-serif; font-size: 30px;}
+ 
+#overlay {top: 60px;}
+#text {font-size: 44px;
+    font-weight: 600;}
+}
+@media (min-width: 768px) {
+    }
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+    .main2 {max-width: 1024px;}}
+
+button:hover {
+    background-color: darkgrey; 
+    border-radius: 95%; 
+    cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="table0_1">
+    <table class="table0_2">
+    <tr>
+        <td class="td5"></td>
+        <td class="table0_3"></td>
+        <td>
+            <!-- <a href="index2.5.html" class="toggle1"></a> -->
+            <button onclick="on()" class="list_button">
+                <img src="img/toggle4.png" alt="toggle" class="img1" />
+            </button>
+
+            <div id="overlay" onclick="off()">
+                <div id="text">
+                    <ol class="list_style">
+                        <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>Войти</li></a>
+                            <hr />
+                            <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>О игре</li></a>
+                            <hr />
+                            <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>Стань разработчиком</li></a>
+                            <hr />
+                            <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>Партнерам</li></a>
+                            <hr />
+                            <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>Правила</li></a>
+                            <hr />
+                            <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>Рекомендации</li></a>
+                    </ol>
+                </div>
+            </div>
+        </td>
+
+        <td class="td1"></td>
+        <td><a href="index2.5.html" class="logo1"><img src="img/logo1.jpg" alt="Logo" class="img1" /></a></td>
+        <td class="td0"></td>
+        <td><a href="index2.5.html" class="autorization1"><img src="img/autorization1.jpg" alt="Autorization" class="img1" /></a></td>
+        <td><a href="index2.5.html" class="autorization1">Login</a></td>
+    </tr>
+    </table>
+</div>
+
+
+<div class="main1">
+<div class="main2">
+    <div class="rectangle1">
+            <a href="/">
+                <h2>
+                <br>
+                Присоединяйся к игре
+                <br><br>
+                И победи!
+                </h2>
+            </a>
+    </div>
+    <div class="rectangle2">
+        <table class="table2">
+            <caption><br /><br /><h2>Топ чемпионов</h2><br /></caption>
+            <tr>
+                <td><img src="img/img2.1.jpg" alt="champione №3" class="img2" /></td>
+                <td class="td1"></td>
+                <td><img src="img/img2.2.jpg" alt="champione №3" class="img2" /></td>
+                <td class="td1"></td>
+                <td><img src="img/img2.3.jpg" alt="champione №3" class="img2" /></td>
+            </tr>
+            <tr>
+                <p>
+                <td>Иван</td>
+                <td></td>
+                <td>Настя</td>
+                <td></td>
+                <td>Костя</td>
+                </p>
+            </tr>
+        </table>
+    </div>
+    
+
+    <div class="rectangle3">
+        <table class="table3">
+            <caption><br /><br /><h2>Топ игр</h2><br /></caption>
+            <tr>
+                <td><a href="/"><img src="img/img3.1.jpg" alt="" class="img2" /></a></td>
+                <td class="td1"></td>
+                <td><img src="img/img3.2.jpg" alt="" class="img2" /></td>
+                <td class="td1"></td>
+                <td><img src="img/img3.3.jpg" alt="" class="img2" /></td>
+                <!-- <td class="td1"></td>
+                <td><img src="img/img2.7.jpg" alt="" class="img2" /></td> -->
+            </tr>
+            <tr>
+                <td>Plants vs Zombie</td>
+                <td></td>
+                <td>GameBoy</td>
+                <td></td>
+                <td>Mospolytech</td>
+                <!-- <td></td>
+                <td>Mospolytech №2 <br />Продолжение</td> -->
+            </tr>
+        </table>
+    </div>
+
+    <div class="rectangle4">
+            <h2>Стань разработчиком своей собственной игры
+            <br><br>
+            Зарабатывай миллионы!</h2>
+            <!-- <button type="submit">Create for everyone</button> -->
+    </div>
+
+    <div class="rectangle5">
+        <br /><br />
+        <h2>Footer</h2><br />
+        <table class="table4">
+            <tr>
+                <td><img src="img/img2.4.jpg" alt="" class="img2" /></td>
+                <td class="td1"></td>
+                <td><img src="img/img2.5.jpg" alt="" class="img2" /></td>
+                <td class="td1"></td>
+                <td><img src="img/img2.6.jpg" alt="" class="img2" /></td>
+                <!-- <td class="td1"></td>
+                <td><img src="img/img2.7.jpg" alt="" class="img2" /></td> -->
+            </tr>
+            <tr>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+ 
+<!-- <footer>
+    Footer
+</footer> -->
+</div>
+</div>
+
+      
+    
+
+    </body>
+</html>
+    

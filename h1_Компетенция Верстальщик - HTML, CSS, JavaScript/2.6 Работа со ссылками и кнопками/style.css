@@ -1,0 +1,18 @@
+.anchor {
+    background-color: #000;
+    color: #fff;
+
+    display: inline-block;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font: 16px bold sans-serif;
+}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:visited {color: gold;}
+
+.vh1 {
+    height: 70vh;
+    width: 90vw;
+    background-color: gold;
+}

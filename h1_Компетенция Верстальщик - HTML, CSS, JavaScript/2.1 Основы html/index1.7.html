@@ -1,0 +1,313 @@
+<!-- optimize, make the code more beautiful, shorter and clearer: -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="some text here" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Azaza
+        </title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon1_4.ico">
+
+
+<style>
+            
+            body {
+            margin:0;
+            padding:0;
+            min-height: 100%;
+            font-family: "oxygen", sans-serif; 
+            font-size: 23px; 
+            color: #000;
+            }
+            a {text-decoration: none;}
+            
+            .main1 {background-color: #F6ABCA;}
+                /* Это очень важный .main1. Без него сайт полетит. */
+            .main2 {background-color: black;
+                width:100%; margin: 0 auto; text-align: center;}
+        
+
+        @media (max-width:375px) {
+            /* body {font-size: 16px;} */
+            .img1 {background-color: aliceblue;
+                min-height: 50px;
+            }
+            .td0 {width: 50px;}
+        }
+        /* @media (max-width: 767px) {
+            .img1 {min-height: 50px;}
+            .td0 {width: 50px;}
+        } */
+        @media (min-width: 768px) {
+            .img1 {min-height: 50px;}
+            .td0 {width: 50px;}
+            }
+        /* @media (min-width: 992px) {
+            .img1 {min-height: 50px;}
+            .td0 {width: 50px;}
+        } */
+        @media (min-width: 1200px) {
+            .img1 {min-height: 50px;}
+            .main2 {max-width: 1024px;}
+        }
+
+
+        
+        .table0_1 {background-color: #F6ABCA; 
+            width: 100%; margin: 0 auto; position: fixed;}
+        .table0_2 {width: 375px; margin: 0 auto; width: 100%; max-width: 1024px;}
+        .table0_3 {min-height: 50px;}
+
+        .table2, .table3, .table4 {
+            min-width: 375px; min-height: 50px; border: 0; width: 100%;
+            margin: 0 auto; 
+            }
+
+        .td1 {width: 10px;}
+        .td5 {width: 50px;}
+
+        .rectangle0, .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5 {
+            text-align: center; width: 100%; margin: 0 auto;
+        }
+        .rectangle1_2 {display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            background-color: #FD889F;
+            min-width: 375px;
+            height: 450px;
+            padding-top: 50px;}
+        .rectangle2 {background-color: #95EE6B;
+            min-width: 375px;
+            height: 450px;
+                
+                /* overflow-x: scroll;
+                overflow-x: hidden; */
+            }
+        .rectangle3 {background-color: #FD889F;
+            min-width: 375px;
+            height: 450px;
+                
+                /* overflow-x: scroll;
+                overflow-x: hidden; */
+            }
+        .rectangle4 {background-color: #95EE6B;
+            min-width: 375px;
+            height: 450px;}
+        .rectangle5 {background-color: #FD889F;
+            min-width: 375px;
+            height: 450px;}
+        /* footer {background-color: blueviolet;
+                min-width: 375px;
+                min-height: 50px;} */
+            
+        /* .img0 {width: auto;
+            max-height: 50px;}
+        .img1 {margin: 0 auto;
+                max-width: 800px;} */
+        /* .img1 {min-height: 50px;} */
+        .img2 {width: 210px;
+            height: 214px;}
+        
+
+        h1 {font-family:"Oxygen", sans-serif;}
+        h2 {font-family:"Oxygen", sans-serif; font-size: 46px;}
+            
+        
+        #overlay {
+            position: fixed;
+            display: none;
+            min-width: 480px;
+            width: 70%;
+            max-width: 630px;
+            height: 100%;
+
+            top: 62px;    /*Вопрос! где еще 12px ??
+                            почему надо писать 62px, хотя должно быть 50px?*/
+            left: 0;
+            bottom: 0;
+            background-color: rgba(149, 238, 107, 0.95);
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        #text{color: rgb(0, 0, 0);
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            font-size: 46px;
+
+            /* transform: translate(-60%,-60%);
+            -ms-transform: translate(-60%,-60%); */
+          }
+
+        .list_button {background-color: inherit;
+            margin: 0; 
+            padding: 0; 
+            border: 0; }
+        .list_style {list-style: none;}
+</style>
+        
+    </head>
+    <body>
+
+        <div class="table0_1">
+            <table class="table0_2">
+            <tr>
+                <td class="td5"></td>
+                <td class="table0_3"></td>
+
+                <td>
+                    <a href="index2.3.html" class="toggle1"></a><button onclick="on()" class="list_button">
+                        <img src="img/toggle1.jpg" alt="toggle" class="img1" />
+                    </button></a>
+
+                    <div id="overlay" onclick="off()">
+                        <div id="text">
+                            <ol class="list_style">
+                                <p>
+                                <li>Войти</li>
+                                <hr />
+                                <li>О игре</li>
+                                <hr />
+                                <li>Стань разработчиком</li>
+                                <hr />
+                                <li>Партнерам</li>
+                                <hr />
+                                <li>Правила</li>
+                                <hr />
+                                <li>Рекомендации</li>
+                                </p>
+                            </ol>
+                        </div>
+                    </div>
+                </td>
+
+                <td class="td1"></td>
+                <td><a href="index2.3.html" class="logo1"><img src="img/logo1.jpg" alt="Logo" class="img1" /></a></td>
+                <td class="td0"></td>
+                <td><a href="index2.3.html" class="autorization1"><img src="img/autorization1.jpg" alt="Autorization" class="img1" /></a></td>
+                <td><a href="index2.3.html" class="autorization1">Login</a></td>
+            </tr>
+            </table>
+        </div>
+
+    <div class="main1">
+    <div class="main2">
+        <div class="rectangle1_2">
+                <h2>Присоединяйся к игре<br /><br />
+                И победи!</h2>
+        </div>
+
+        <div class="rectangle2">
+            <br />
+            <h2>Топ чемпионов</h2>
+            <table class="table2">
+                <tr>
+                    <td><img src="img/img2.1.jpg" alt="champione №3" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.2.jpg" alt="champione №3" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.3.jpg" alt="champione №3" class="img2" /></td>
+                </tr>
+                <tr>
+                    <p>
+                    <td>Иван</td>
+                    <td></td>
+                    <td>Настя</td>
+                    <td></td>
+                    <td>Костя</td>
+                    </p>
+                </tr>
+            </table>
+        </div>
+
+        <div class="rectangle3">
+            <br />
+            <h2>Топ игр</h2>
+            <table class="table3">
+                <tr>
+                    <td><img src="img/img2.4.jpg" alt="" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.5.jpg" alt="" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.6.jpg" alt="" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.7.jpg" alt="" class="img2" /></td>
+                </tr>
+                <tr>
+                    <td>Plants vs Zombie</td>
+                    <td></td>
+                    <td>GameBoy</td>
+                    <td></td>
+                    <td>Mospolytech</td>
+                    <td></td>
+                    <td>Mospolytech №2 <br />Продолжение</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="rectangle4">
+            <div>
+                <br />
+                <br />
+                <h2>Стань разработчиком своей собственной игры</h2>
+                <br />
+                <h2>Зарабатывай миллионы!</h2>
+                <!-- <button type="submit">Create for everyone</button> -->
+            </div>
+        </div>
+
+        <div class="rectangle5">
+            <br />
+            <h2>Footer</h2>
+            <table class="table4">
+                <tr>
+                    <td><img src="img/img2.4.jpg" alt="" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.5.jpg" alt="" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.6.jpg" alt="" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.7.jpg" alt="" class="img2" /></td>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- <script>
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+        </script> -->
+
+        <script>
+            function on() {
+                document.getElementById("overlay").style.display = "block";
+            }
+
+            function off() {
+                document.getElementById("overlay").style.display = "none";
+            }
+        </script>
+    
+    <!-- <footer>
+        Footer
+    </footer> -->
+    </div>
+    </div>
+
+      
+    
+
+    </body>
+</html>

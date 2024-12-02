@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+html {font: 10px bold sans-serif;}
+body {
+  margin: 0;
+  background-color: #ccc;
+  font: 2rem;
+}
+h3 {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+.div1 {
+    width: 650px;
+    background-color: aqua;
+}
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* padding: 0 1rem; */
+}
+.product-card {
+  background-color: #fff;
+  max-width: 180px;
+  padding: 1rem;
+  border: 1px solid gold;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border: 1px solid seagreen;
+    border-radius: 5px;
+
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+}
+.button:hover {background-color: seagreen;}
+
+</style>
+</head>
+<body>
+<div class="div1">
+    <section class="products">
+      <div class="product-card">
+        <h3 class="product-card__title">MacBook Air M2</h3>
+        <p class="product-card__description">Redesigned around the next-generation M2 chip, MacBook Air is strikingly thin and brings exceptional speed and power efficiency within its durable all‑aluminum enclosure. It’s the ultrafast, ultracapable laptop that lets you work, play, or create just about anything — anywhere.</p>
+        <button class="button">Buy</button>
+      </div>
+      <div class="product-card">
+        <h3 class="product-card__title">MacBook Air M2</h3>
+        <p class="product-card__description">Redesigned around the next-generation M2 chip, MacBook Air is strikingly thin and brings exceptional speed and power efficiency within its durable all‑aluminum enclosure.</p>
+        <button class="button">Buy</button>
+      </div>
+      <div class="product-card">
+        <h3 class="product-card__title">MacBook Air M2</h3>
+        <p class="product-card__description">Redesigned around the next-generation M2 chip, MacBook Air is strikingly thin and brings exceptional speed and power efficiency within its durable all‑aluminum enclosure. It’s the ultrafast, ultracapable laptop that lets you work, play, or create just about anything — anywhere.</p>
+        <button class="button">Buy</button>
+      </div>
+    </section>
+</div>
+<div class="div2">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azaza</title>
+    <style>
+        #overlay {
+    position: fixed;
+    display: none;
+    min-width: 480px;
+    width: 70%;
+    max-width: 630px;
+    height: 100;
+    top: 62px;    /*Вопрос! где еще 12px ??
+                    почему надо писать 62px, хотя должно быть 50px?*/
+    left: 0;
+    bottom: 0;
+    background-color: rgba(149, 238, 107, 0.95);
+    z-index: 2;
+    cursor: pointer;
+ }
+#text{color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 46p
+}
+.list_button {background-color: inherit;
+    margin: 0; 
+    padding: 0; 
+    border: 0; }
+.list_style {list-style: none;}
+.simple {
+    font-size: 30px;
+    font-weight: 400;
+    }
+        
+    
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "oxygen", sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+.main2, .table0_1, .table0_2, .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5 {
+    width: 100%;
+    margin: 0 auto;
+}
+.main1, .main2 {
+    background-color: #F6ABCA;
+    text-align: center;
+}
+.rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5 {
+    min-width: 375px; 
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rectangle1 {
+    background-color: #FD889F;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.rectangle2 {background-color: #95EE6B;}
+.rectangle3 {background-color: #FD889F;}
+.rectangle4 {background-color: #95EE6B;}
+.rectangle5 {background-color: #FD889F;}
+.img2 {
+    width: 210px;
+    height: 214px;
+}
+.table0_1 {background-color: #F6ABCA; 
+    width: 100%; 
+    margin: 0 auto; 
+    position: fixed;
+}
+.table0_2 {width: 375px;}
+@media (min-width: 767px) {
+    body {
+        font-size: 23px;
+    }
+    .rectangle1 {
+        height: 450px;
+        padding-top: 50px;
+    }
+    .img2 {
+        width: 105px;
+        height: 107px;
+    }
+    h1, h2, h3 {
+        font-size: 30px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="table0_1">
+        <table class="table0_2">
+            <tr>
+                <td class="td5"></td>
+                <!-- ... other table cells ... -->
+                <td class="table0_3"></td>
+                <td>
+                <a href="index2.3.html" class="toggle1"></a><button onclick="on()" class="list_button">
+                <img src="img/toggle1.jpg" alt="toggle" class="img1" />
+                </button></a>
+
+            <div id="overlay" onclick="off()">
+                <div id="text">
+                    <ol class="list_style">
+                        <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>Войти</li></a>
+                            <hr />
+                            <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>О игре</li></a>
+                            <hr />
+                            <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>Стань разработчиком</li></a>
+                            <hr />
+                            <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>Партнерам</li></a>
+                            <hr />
+                            <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>Правила</li></a>
+                            <hr />
+                            <a href="https://th.bing.com/th/id/OIP.6i7OogeYiS06L2dGmDuysQHaHa?rs=1&pid=ImgDetMain" target="_blank"><li>Рекомендации</li></a>
+                    </ol>
+                </div>
+            </div>
+        </td>
+
+        <td class="td1"></td>
+        <td><a href="index2.3.html" class="logo1"><img src="img/logo1.jpg" alt="Logo" class="img1" /></a></td>
+        <td class="td0"></td>
+        <td><a href="index2.3.html" class="autorization1"><img src="img/autorization1.jpg" alt="Autorization" class="img1" /></a></td>
+        <td><a href="index2.3.html" class="autorization1">Login</a></td>
+            </tr>
+        </table>
+    </div>
+
+<div class="main1">
+<div class="main2">
+        <div class="rectangle1">
+            <h2>Присоединяйся к игре<br>И победи!</h2>
+        </div>
+        <div class="rectangle2">
+            <table class="table2">
+                <!-- ... table content ... -->
+                <caption><h2>Топ чемпионов</h2></caption>
+                <tr>
+                    <td><img src="img/img2.1.jpg" alt="champione №3" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.2.jpg" alt="champione №3" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.3.jpg" alt="champione №3" class="img2" /></td>
+                </tr>
+                <tr>
+                    <p>
+                    <td>Иван</td>
+                    <td></td>
+                    <td>Настя</td>
+                    <td></td>
+                    <td>Костя</td>
+                    </p>
+                </tr>
+            </table>
+        </div>
+        <!-- ... other rectangles ... -->
+
+        <div class="rectangle3">
+            <table class="table3">
+                <caption><h2>Топ игр</h2></caption>
+                <tr>
+                    <td><img src="img/img2.4.jpg" alt="" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.5.jpg" alt="" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.6.jpg" alt="" class="img2" /></td>
+                    <!-- <td class="td1"></td>
+                    <td><img src="img/img2.7.jpg" alt="" class="img2" /></td> -->
+                </tr>
+                <tr>
+                    <td>Plants vs Zombie</td>
+                    <td></td>
+                    <td>GameBoy</td>
+                    <td></td>
+                    <td>Mospolytech</td>
+                    <!-- <td></td>
+                    <td>Mospolytech №2 <br />Продолжение</td> -->
+                </tr>
+            </table>
+        </div>
+    
+        <div class="rectangle4">
+                <h2>Стань разработчиком своей собственной игры
+                <br><br>
+                Зарабатывай миллионы!</h2>
+                <!-- <button type="submit">Create for everyone</button> -->
+        </div>
+    
+        <div class="rectangle5">
+            <table class="table4">
+                <tr>
+                    <caption><h2>Footer</h2></caption>
+                    <td><img src="img/img2.4.jpg" alt="" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.5.jpg" alt="" class="img2" /></td>
+                    <td class="td1"></td>
+                    <td><img src="img/img2.6.jpg" alt="" class="img2" /></td>
+                    <!-- <td class="td1"></td>
+                    <td><img src="img/img2.7.jpg" alt="" class="img2" /></td> -->
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </div>
+    <script>
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</div>
+</div>
+
+
+</body>
+</html>
