@@ -1,0 +1,36 @@
+@import './utils';
+@import './components';
+@import './layout';
+
+.divider {
+    height: 50px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.ui_title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+.h1 {
+    @include h1();
+}
+.h2 {
+    @include h2();
+}
+.h3 {
+    @include h3();
+}
+.p1 {
+    @include p1();
+}
+.p2 {
+    @include p2();
+}
+.p3 {
+    @include p3();
+}

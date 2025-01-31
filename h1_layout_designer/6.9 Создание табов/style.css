@@ -1,0 +1,29 @@
+html {font: 10px 'Roboto' sans-serif;}
+.tabs {overflow: hidden;}
+.tab_head {display: flex;}
+.tab_head_item {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid transparent;
+}
+.tab_head_item:hover, 
+.tab_head_item.active {
+    border-bottom: 1px solid darkblue;
+}
+.tab_content {position: relative;}
+.tab_content_item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transform: translate(10rem);
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+.tab_content_item.active {
+    transition: all 250ms;
+    opacity: 1;
+    transform: translateX(0);
+    position: static;
+}

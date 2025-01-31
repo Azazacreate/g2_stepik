@@ -1,0 +1,17 @@
+.feature {
+    padding-left: 4.1rem;
+    width: 100%;
+    position: relative;
+
+    &__text {
+        @include p1();
+    }
+
+    &::before {
+        content: url(../images/plus-icon.png);
+        // учтите, что все будет собираться в папку-index
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

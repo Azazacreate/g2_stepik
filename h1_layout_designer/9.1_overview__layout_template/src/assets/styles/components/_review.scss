@@ -1,0 +1,17 @@
+.review {
+    display: flex;
+    flex-direction: column;
+
+    @media ($tablet) {
+        flex-direction: row;
+    }
+    &_image {
+        @include img();
+        width: 7.5rem;
+        height: 7.5rem;
+        background-color: $colorPrimary;
+    }
+    &_text {
+        position: relative;
+    }
+}

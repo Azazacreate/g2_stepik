@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.7 слайдер</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="slider">
+        <div class="slider_container">
+            <img class="slider_image" src="./img/html.jpg" alt="slider_image" srcset="">
+        </div>
+        <div class="slider_controls">
+            <!-- точки -->
+             <div class="slider_dots">
+                <span class="slider_dot active" onclick="slide(0)"></span>
+                <span class="slider_dot" onclick="slide(1)"></span>
+                <span class="slider_dot" onclick="slide(2)"></span>
+             </div>
+
+            <!-- стрелки -->
+            <button class="slider_nav" onclick="indexNext(-1)">&lt;</button>
+            <button class="slider_nav" onclick="indexNext(1)">&gt;</button>
+        </div>
+    </div>
+    <br />
+    html
+    <br />
+    <script src="./main.js"></script>
+</body>
+</html>

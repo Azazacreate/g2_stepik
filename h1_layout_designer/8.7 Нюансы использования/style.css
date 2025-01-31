@@ -1,0 +1,14 @@
+html, body {margin: 0;}
+.container {
+    background-color: #ccc;
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.8rem;
+
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+}
+.item {
+    background-color: burlywood;
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+}

@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        'header header header header'
+        'aside . article article'
+        'footer footer footer footer';
+}
+.container > * {
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+}
+header {background-color: brown; grid-area: header;}
+aside {background-color: chocolate; grid-area: aside;}
+article {background-color: burlywood; grid-area: article;}
+footer { background-color: cadetblue; grid-area: footer;}

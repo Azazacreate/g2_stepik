@@ -1,0 +1,11 @@
+html {font: 12px;}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 0.8rem;
+}
+.grid > div {
+    background-color: antiquewhite;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+}

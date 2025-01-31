@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="filter">
+        <div class="filter_button">
+            <!-- для экранов:больших -->
+            <div class="filter_button_item active" data-filter="all">All</div>
+            <div class="filter_button_item" data-filter="animals">Animals</div>
+            <div class="filter_button_item" data-filter="people">People</div>
+            <div class="filter_button_item" data-filter="nature">Nature</div>
+
+            <!-- для экранов:маленьких -->
+            <select class="filter_options">
+                <option value="all">All</option>
+                <option value="animals">Animals</option>
+                <option value="people">People</option>
+                <option value="nature">Nature</option>
+            </select>
+        </div>
+        <div class="filter_content">
+            <img class="all animals flip-horizontal-bottom" src="https://placehold.jp/150x150.png?text=animal_1" alt="">
+            <img class="all animals" src="https://placehold.jp/150x150.png?text=animal_2" alt="">
+            <img class="all animals" src="https://placehold.jp/150x150.png?text=animal_3" alt="">
+            <img class="all people" src="https://placehold.jp/150x150.png?text=people_1" alt="">
+            <img class="all people" src="https://placehold.jp/150x150.png?text=people_2" alt="">
+            <img class="all people" src="https://placehold.jp/150x150.png?text=people_3" alt="">
+            <img class="all nature" src="https://placehold.jp/150x150.png?text=nature_1" alt="">
+            <img class="all nature" src="https://placehold.jp/150x150.png?text=nature_2" alt="">
+            <img class="all nature" src="https://placehold.jp/150x150.png?text=nature_3" alt="">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

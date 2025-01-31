@@ -1,0 +1,25 @@
+html {font: 10px 'Roboto' sans-serif;}
+.filter_button_item {display: inline;}
+.active {
+    border-bottom: 1px solid darkblue;
+    transition: all 0.25s;
+    opacity: 1;
+    transform: translateX(0);
+    position: static;
+}
+
+/* animista.net */
+.flip-horizontal-bottom {
+	-webkit-animation: flip-horizontal-bottom 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite both;
+	        animation: flip-horizontal-bottom 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite both;
+}
+@keyframes flip-horizontal-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    100% {
+      -webkit-transform: rotateX(-180deg);
+              transform: rotateX(-180deg);
+    }
+}

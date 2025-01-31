@@ -1,0 +1,36 @@
+@mixin h1($color: white) {
+    font-size: 2.8rem;
+    font-family: $fontMain;
+    color: $color;
+    text-shadow: $text-shadow;
+
+    @media ($tablet) {
+        font-size: 6rem;
+    }
+}
+@mixin h2($color: $colorPrimary, $align: left) {
+    color: $color;
+    font-size: 2.6rem;
+    text-align: $align;
+    line-height: 1.2;
+}
+@mixin h3($color: $colorPrimary, $align: left) {
+    color: $color;
+    font-size: 2.4rem;
+    text-align: $align;
+    line-height: 1.2;
+}
+@mixin p1($color: $text_color) {
+    font-size: 1.6rem;
+}
+@mixin p2($color: $text_color) {
+    font-size: 1.4rem;
+}
+@mixin p3($color: $text_color) {
+    font-size: 2rem;
+    color: #fff;
+}
+@mixin img ($bg: $colorPrimary) {
+    object-fit: cover;
+    object-position: center;
+}

@@ -1,0 +1,9 @@
+:root {
+    --colorPrimary: red;
+}
+.text {
+    color: var(--colorPrimary);
+}
+.textGreen {
+    --colorPrimary: green;
+}

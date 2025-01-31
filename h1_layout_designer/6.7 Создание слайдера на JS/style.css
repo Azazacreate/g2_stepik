@@ -1,0 +1,41 @@
+* {margin: 0; padding: 0; font: 20px 'Roboto', sans-serif;}
+.slider {
+    width: 500px;
+    height: 40vh;
+    background-color: antiquewhite;
+}
+.slider_container {
+    width: 100%;
+    height: 100%;
+}
+.slider_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* стрелки */
+.slider_controls {
+    padding-top: 0rem;
+    text-align: center;
+}
+.slider_nav {
+    cursor: pointer;
+}
+
+/* точки */
+.slider_dots {
+    padding: 1rem 0;
+    text-align: center;
+}
+.slider_dot {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 2px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    display: inline-block;
+}
+.slider_dot.active, .slider_dot:hover {
+    background-color: blueviolet;
+}
