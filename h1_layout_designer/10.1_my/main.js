@@ -1,8 +1,6 @@
 const btn = document.querySelector('.open__modal');
 const modal = document.querySelector('.modal')
 const close__modal = document.querySelector('.close__modal');
-
-
 btn.onclick = () => {
         modal.classList.add('modalActive');
         close__modal.addEventListener('click', close__modal_2)
@@ -20,3 +18,16 @@ btn.onclick = () => {
             }
         }
     };
+
+
+const beforeElements = document.querySelectorAll('.before');
+beforeElements.forEach(before => {
+    before.onclick = () => {
+        const currentContent = getComputedStyle(before, '::before').getPropertyValue('content').replace(/['"]/g, '').trim();
+        if (currentContent === '▶') {
+            before.style.setProperty('--before-content', "'▽ '");
+        } else {
+            before.style.setProperty('--before-content', "'▶ '");
+        }
+    };
+});

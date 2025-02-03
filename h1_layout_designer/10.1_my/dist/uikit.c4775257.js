@@ -14,5 +14,13 @@ btn.onclick = ()=>{
         if (event.target === modal) close__modal_2();
     }
 };
+const beforeElements = document.querySelectorAll(".before");
+beforeElements.forEach((before)=>{
+    before.onclick = ()=>{
+        const currentContent = getComputedStyle(before, "::before").getPropertyValue("content").replace(/['"]/g, "").trim();
+        if (currentContent === "\u25B6") before.style.setProperty("--before-content", "'\u25BD '");
+        else before.style.setProperty("--before-content", "'\u25B6 '");
+    };
+});
 
 //# sourceMappingURL=uikit.c4775257.js.map

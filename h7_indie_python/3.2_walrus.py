@@ -1,0 +1,1 @@
+print(see_walrus := 'Look at my walrus, my walrus is amazing')

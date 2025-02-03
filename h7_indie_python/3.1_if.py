@@ -142,4 +142,26 @@ a = list(map(int, input().split()))'''
 
 Программа должна выводить YES, когда клетки одного цвета, NO - разного. Гарантируется, что значение колонок это латинские буквы abcdefgh, а строки это символы цифр от 1-8
 '''
-...
+
+
+def are_cells_same_color(cell1, cell2):
+    # Определяем координаты клеток
+    column1, row1 = cell1[0], int(cell1[1])
+    column2, row2 = cell2[0], int(cell2[1])
+    # Преобразуем буквы столбцов в числа
+    column1_index = ord(column1) - ord('a')
+    column2_index = ord(column2) - ord('a')
+    # Определяем цвета клеток
+    color1 = (column1_index + row1) % 2
+    color2 = (column2_index + row2) % 2
+    # Сравниваем цвета клеток
+    if color1 == color2:
+        return "YES"
+    else:
+        return "NO"
+# Ввод координат клеток
+cell1 = input("Введите координаты первой клетки (например, a1): ")
+cell2 = input("Введите координаты второй клетки (например, h8): ")
+
+# Вывод результата
+print(are_cells_same_color(cell1, cell2))
