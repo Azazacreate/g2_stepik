@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles/index.scss","styles/_vars.scss"],"names":[],"mappings":"AACA;EACI,kBCFQ;EDGR,WCFY;EDGZ","file":"src.e31bb0bc.css","sourceRoot":"../src","sourcesContent":["@import './vars';\nbody {\n    background-color: $colorMain;\n    font-size: $font_sizeMain;\n    display: flex;\n}","$colorMain: red;\n$font_sizeMain: 1.6rem;"]}

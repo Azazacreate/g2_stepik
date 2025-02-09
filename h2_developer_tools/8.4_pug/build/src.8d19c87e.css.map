@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles/index.scss","styles/_vars.scss"],"names":[],"mappings":"AACA,KACI,uBCFQ,CDGR","file":"src.8d19c87e.css","sourceRoot":"../src","sourcesContent":["@import './vars';\nbody {\n    background-color: $colorMain;\n    font-size: $font_sizeMain;\n    // display: flex;\n};","$colorMain: orange;\n$font_sizeMain: 1.6rem;"]}

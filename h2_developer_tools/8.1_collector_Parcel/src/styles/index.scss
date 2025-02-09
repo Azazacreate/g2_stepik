@@ -1,0 +1,6 @@
+@import './vars';
+body {
+    background-color: $colorMain;
+    font-size: $font_sizeMain;
+    display: flex;
+}

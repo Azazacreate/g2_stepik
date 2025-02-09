@@ -1,0 +1,20 @@
+{
+  "name": "7.5_npm_managerpackage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "clear": "rm -rf './build' && mkdir build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.84.0"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "webpack": "^5.97.1"
+  }
+}

@@ -1,0 +1,1 @@
+console.log('you start index.js via npm ! Wow!')

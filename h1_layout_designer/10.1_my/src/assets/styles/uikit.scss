@@ -90,8 +90,7 @@ p {}
         justify-content:space-evenly;
     }
 }
-// main1
-.header {
+.main1 {
     // padding: 0 0.2rem;
     width: 36rem;
     height: 4.4rem;
@@ -99,7 +98,7 @@ p {}
     display: flex;
     justify-content: space-between;
 }
-.header > div, button {
+.main1 > div, button {
     width: 4.4rem;
     height: 4.4rem;
     // background-color: aqua;
@@ -151,6 +150,9 @@ button {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.2);
+    @media (min-width: 1380) {
+        // background-color: rgba(173, 2, 164, 0.2);
+    }
 }
 .modalActive { display: block;}
 .close__modal {
@@ -170,8 +172,21 @@ button {
     width: 31rem;
     height: 100vh;    // 68.2rem;
     box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+    
     /* animation */
-    animation: animationTop 0.3s;
+    // animation: animationTop 0.3s;
+    // @keyframes animationTop {
+    //     from {
+    //         top: 4.4rem;
+    //         left: -10rem;
+    //         opacity: 0;
+    //     }
+    //     to {
+    //         top: 4.4rem;
+    //         left: 10rem;
+    //         opacity: 1;
+    //     }
+    // }
 }
 .modal_content > div {
     padding-left: 2rem;
@@ -182,15 +197,3 @@ button {
     align-items: center;
     // background-color: aqua;
 }
-// @keyframes animationTop {
-//     from {
-//         top: 0rem;
-//         left: -20rem;
-//         opacity: 0;
-//     }
-//     to {
-//         top: 0;
-//         right: 0;
-//         opacity: 1;
-//     }
-// }

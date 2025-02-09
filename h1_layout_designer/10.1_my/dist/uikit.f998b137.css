@@ -174,7 +174,7 @@ body {
   }
 }
 
-.header {
+.main1 {
   background-color: #f6abca;
   justify-content: space-between;
   width: 36rem;
@@ -182,7 +182,7 @@ body {
   display: flex;
 }
 
-.header > div, button {
+.main1 > div, button {
   justify-content: center;
   align-items: center;
   width: 4.4rem;
@@ -258,7 +258,6 @@ button {
   background-color: #91ec59;
   width: 31rem;
   height: 100vh;
-  animation: .3s animationTop;
   position: relative;
   top: 4.4rem;
   box-shadow: 0 .4rem .8rem #0003;
