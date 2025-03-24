@@ -1,0 +1,21 @@
+.prices {
+    margin-bottom: 3rem;
+    &_title {
+        @include h2();
+        margin-bottom: 3rem;
+    }
+    &_items {
+        margin-left: 1.5rem;
+        display: grid;
+        align-items: end;
+        justify-content: center;
+        gap: 3rem 1rem;
+        
+        // @media ($tablet) {
+        //     grid-template-columns: 1fr 1fr;
+        // }
+        @media (min-width: 960px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

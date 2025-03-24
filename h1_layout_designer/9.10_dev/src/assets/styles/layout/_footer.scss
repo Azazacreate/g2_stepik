@@ -1,0 +1,80 @@
+.footer {
+    &_image {
+        @include img();
+        height: 2.4rem;
+        background-color: #fff;
+        margin-right: 1rem;
+        border-radius: 50%;
+    }
+    &_main {
+        @include section();
+        background-color: $color_1;
+    }
+    &_title {
+        @include h2($color_2);
+    }
+    &_contacts {
+        display: flex;
+        flex-direction: column;
+
+        @media ($tablet) {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    &_contact_form {
+        margin-bottom: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex-basis: 50%;
+        
+        @media ($tablet) {
+            margin-right: 1.5rem;
+        }
+        @media ($desktop) {
+            flex-basis: 50rem;
+        }
+    }
+    &_input {
+        @include input();
+        margin-bottom: 2.1rem;
+    }
+    &_textarea {
+        @include textarea();
+        margin-bottom: 2.1rem;
+    }
+    &_submit {
+        @include button();
+        align-self: center;
+    }
+    &_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &_link_item {
+        @include p2($color_2);
+        margin-bottom: 1.8rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        
+        // &:last-child {
+        //     margin-bottom: 0;
+        // }
+    }
+    &_copyright {
+        background-color: gray;
+        padding: 0.5rem;
+        
+        &_text {
+            text-align: center;
+            font-size: 1.2rem;
+            color: $color_3;
+            letter-spacing: 0.03rem;
+        }
+    }
+
+}

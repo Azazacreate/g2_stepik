@@ -1,0 +1,45 @@
+// @import './utils';
+@import './components';
+// @import './layout';
+
+* {box-sizing: border-box;}
+html {font-size: 10px;}
+body {
+  // background-color: rgb(96, 182, 235);
+  background: url('../../assets/imgs/img_2.png');
+  background-attachment: fixed;
+  margin: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+p {font-size: 2rem;}
+h1, h2, h3, h4, h5, h6, li {
+  font-size: 2.7rem;
+  // line-height: 1.8;
+}
+h2 {
+  margin: 0;
+}
+li {
+  font-size: 2rem;
+  line-height: 1.5;
+  height: 44px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover, input:hover, li:hover, button:hover {
+  background-color:rgba(255, 0, 0, 0.1);
+}
+textarea {
+  line-height: 1.6;
+}
+hr {
+  outline: none;
+  border: 0.08rem solid;
+  margin: 1rem 1rem 1rem 1rem;
+}
+img {max-width: 100%;}

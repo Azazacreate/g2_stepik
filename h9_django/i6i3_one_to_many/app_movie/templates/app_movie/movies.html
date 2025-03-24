@@ -1,0 +1,22 @@
+{% extends 'app_movie/base.html' %}
+
+{% block title %} Все-фильмы {% endblock title%}
+{% block content %}
+  <h2>Список_фильмов</h2>
+  <ul>
+    {% for movie in movies %}
+      <li><a href='{{movie.get__url}}'>{{movie.name}}</a>,
+        рейтинг = {{movie.rating}},
+        бюджет = {{movie.budget}},
+        год = {{movie.year}}
+      </li>
+    {% endfor %}
+  </ul>
+  <h3>бюджет:средний = {{agg.budget__avg}}</h3>
+  <h3>рейтинг:минимальный = {{agg.rating__max}}</h3>
+  <h3>рейтинг:максимальный = {{agg.rating__min}}</h3>
+  <h3>всего-фильмов = {{agg.name__count}}</h3>
+  <hr>
+  <h3>Режиссеры <a href='{{movie.director.get__url}}'>{{movie.director.objects.all}}</a></h3>
+  <h3>Актеры </h3>
+{% endblock content%}

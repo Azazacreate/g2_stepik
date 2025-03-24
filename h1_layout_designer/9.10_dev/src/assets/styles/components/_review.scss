@@ -1,0 +1,57 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media ($tablet) {
+        flex-direction: row;
+        align-items: left;
+    }
+
+    &_image {
+        @include img();
+        width: 7.5rem;
+        height: 7.5rem;
+        background-color: $color_1;
+        border-radius: 50%;
+        margin-bottom: 2.5rem;
+
+        @media ($tablet) {
+            margin-bottom: 0;
+            margin-right: 3rem;
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+    &_text {
+        @include p2();
+        position: relative;
+        background-color: $color_3;
+        padding-left: 1rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -1rem;
+            left: calc(50% - 1rem);
+            width: 2rem;
+            height: 2rem;
+            background-color: $color_3;
+            z-index: -1;
+            transform: rotate(45deg);
+
+            @media ($tablet) {
+                top: 2.8rem;
+                left: -1rem;
+            }
+        }
+
+        &_item {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+        &_author {
+            color: $color_1;
+        }
+    }
+}

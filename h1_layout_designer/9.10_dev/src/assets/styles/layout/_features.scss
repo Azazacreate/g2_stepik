@@ -1,0 +1,22 @@
+.features {
+    @include section();
+    background-color: gray;
+
+    &_title {
+        @include h2();
+        margin-bottom: 3rem;
+    }
+    &_items {
+        display: grid;
+
+        @media ($tablet) {
+            flex-direction: row;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 4rem;
+        }
+        @media ($desktop) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+

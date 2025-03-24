@@ -1,0 +1,14 @@
+.social {
+    &_icon {
+        content: url(../images/facebook_44.png);
+        // font-size: 6rem;
+        // font-family: $font_icon;
+        // letter-spacing: 5px;
+        // text-decoration: none;
+        // color: #fff;
+        // background-color: aliceblue;
+        &:hover {
+            background-color: darken($color_2, 35%);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.reviews {
+    @include section();
+    background-color: $color_2;
+
+    &_title {
+        @include h2();
+        margin-bottom: 3rem;
+    }
+    &_items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem 1.5rem;
+        // @media ($tablet) {
+        //     grid-template-columns: 1fr 1fr;
+        // }
+        @media ($projector) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

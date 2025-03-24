@@ -1,0 +1,26 @@
+<p><a href="{% url 'about' %}">About</a></p>
+<hr>
+<h1>Password_generator</h1>
+
+<form action="{% url 'password' %}">
+    <label for="password_length">password_length: </label>
+    <select name="password_length" id="password_length">
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12" selected="selected">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+    </select>
+    <br><br>
+    <label for="password_uppercase">password_uppercase: </label>
+    <input type="checkbox" id="password_uppercase" name="password_uppercase" />
+    <br><br>
+    <label for="password_numbers">numbers: </label>
+    <input type="checkbox" id="password_numbers" name="password_numbers" />
+    <br><br>
+    <label for="password_charactersSpecial">charactersSpecial: </label>
+    <input type="checkbox" id="password_charactersSpecial" name="password_charactersSpecial" />
+    <br><br>
+    <button type="submit">generate password</button>
+</form>
